@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2022/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Matrix Print</Title>
+			<Shortcut>matrixPrint</Shortcut>
+			<Description>outputs a matrix in table format</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[Console.WriteLine();
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write(matrix[i, j] + " ");
+                }
+                Console.WriteLine();
+            }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
