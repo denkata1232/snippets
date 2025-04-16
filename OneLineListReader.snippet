@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2022/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>List reader from one line</Title>
+			<Shortcut>oneLineList</Shortcut>
+			<Description>creates and reads list from one line</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[List<$type$> $name$ = Console.ReadLine()
+                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                .Select($type$.Parse)
+                .ToList();]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Enter the type of data.</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Enter a name of your list.</ToolTip>
+					<Default>list</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
