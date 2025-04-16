@@ -1,12 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2022/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
 			<Title>Martix Reader</Title>
+			<Shortcut>matrixEnter</Shortcut>
+			<Description>reads matrix in table format</Description>
 		</Header>
 		<Snippet>
 			<Code Language="CSharp">
-				<![CDATA[int[] size = Console.ReadLine()
+				<![CDATA[
+				int[] size = Console.ReadLine()
                 .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
@@ -22,10 +25,9 @@
                 {
                     matrix[i, j] = int.Parse(spl[j]);
                 }
-            }]]>
+            }
+			]]>
 			</Code>
-			<Shortcut>matrixEnter</Shortcut>
 		</Snippet>
 	</CodeSnippet>
 </CodeSnippets>
-
